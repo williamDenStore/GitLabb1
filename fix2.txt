@@ -1,0 +1,32 @@
+git init
+git branch -m master main
+New-Item README.md
+git add README.md
+git commit -m "Initial commit"
+git checkout -b feature1
+git add README.md
+git commit -m "adds dog and changes moose to mouse in README.md"
+git checkout main
+git add README.md
+git commit -m "changes moose to mahmut in README.md"
+git merge feature1
+git add README.md
+git commit -m "Merge branch 'feature1'"
+git tag extinct
+git reset --hard 1e61
+git branch feature2
+git add README.md
+git commit -m "change the first letter of each animal to a capital letter in README.md"
+
+git checkout feature2
+New-Item fix1.txt
+git add fix1.txt
+git commit -m "add fix1.txt"
+
+New-Item fix2.txt
+git add fix2.txt
+git commit -m "add fix2.txt"
+git checkout main
+git cherry-pick 51132b4f
+git add fix2.txt
+git commit -m "add git commands to fix2.txt"
