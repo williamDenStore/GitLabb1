@@ -30,3 +30,6 @@ git checkout main
 git cherry-pick 51132b4f
 git add fix2.txt
 git commit -m "add git commands to fix2.txt"
+
+git remote add origin https://github.com/williamDenStore/GitLabb1.git
+git push -u origin main
